@@ -11,14 +11,10 @@ Follow these steps to set up and run the project locally:
 1. Navigate to the `backend` directory.
 
 ```bash
-cd backend
+cd quizbackendapi
 ```
 
-2. Install the required dependencies.
-
-```bash
-pip install -r requirements.txt
-```
+2. Install django and django restframework libraries
 
 3. Apply migrations.
 
@@ -62,8 +58,8 @@ The backend provides the following API endpoints:
 
 - **Score:**
   - Endpoint: `/score/`
-  - Method: GET
-  - Description: Get the user's score.
+  - Method: POST
+  - Description: Post the user's score.
 
 - **Verify Token:**
   - Endpoint: `/verifytoken/`
@@ -72,7 +68,7 @@ The backend provides the following API endpoints:
 
 - **Leaderboard:**
   - Endpoint: `/leaderboard/`
-  - Method: GET
+  - Method: POST
   - Description: Retrieve the leaderboard.
 
 - **Generate Access Token and Refresh Token:**
@@ -85,3 +81,4 @@ The backend provides the following API endpoints:
 Ensure that you start the backend server before running the frontend to fetch content dynamically from the backend.
 
 Feel free to explore, contribute, and enjoy learning with the Language Learning Quiz Game! If you encounter any issues or have suggestions, please open an issue on GitHub.
+
