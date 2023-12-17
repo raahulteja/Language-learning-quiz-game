@@ -1,85 +1,87 @@
+# Language Learning Quiz Game
 
-# Quiz Game
+Welcome to the Language Learning Quiz Game project! This project is a quiz game designed to help users improve their language skills. The project is divided into two components: a decoupled frontend and a backend. The frontend is built entirely using HTML, CSS, and JavaScript, while the backend is developed in Django with the assistance of Django Rest Framework.
 
-This is a simple quiz game with a separate frontend and backend. The frontend is built using HTML, CSS, and JavaScript, while the backend is powered by Django.
+## Getting Started
 
-## Features
-
-- User authentication
-- Quiz creation and management
-- Dynamic quiz questions with multiple choices
-- Score tracking
-- Leaderboard
-
-## Technologies Used
-
-- Frontend: HTML, CSS, JavaScript
-- Backend: Django
-
-## Setup Instructions
-
-### Frontend
-
-1. Clone the repository
-
-
-2. Open `index.html` in your browser or use a local server.
+Follow these steps to set up and run the project locally:
 
 ### Backend
 
-1. Install Python (if not already installed): [Python Downloads](https://www.python.org/downloads/)
+1. Navigate to the `backend` directory.
 
-2. Clone the repository:
-
-
-3. Create a virtual environment:
-
-   ```bash
-   python -m venv venv
-   ```
-
-4. Activate the virtual environment:
-
-   - On Windows:
-
-     ```bash
-     venv\Scripts\activate
-     ```
-
-   - On macOS and Linux:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-5. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-6. Apply migrations:
-
-   ```bash
-   python manage.py migrate
-   ```
-
-7. Run the development server:
-
-   ```bash
-   python manage.py runserver
-   ```
-
-   The backend will be accessible at http://localhost:8000.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```bash
+cd backend
 ```
 
-Feel free to replace the placeholder URLs and paths with your actual project details. Customize the sections and content based on your specific project requirements.
+2. Install the required dependencies.
 
+```bash
+pip install -r requirements.txt
+```
+
+3. Apply migrations.
+
+```bash
+python manage.py migrate
+```
+
+4. Run the Django development server.
+
+```bash
+python manage.py runserver
+```
+
+The backend server will be running at `http://localhost:8000/`.
+
+### Frontend
+
+1. Navigate to the `frontend` directory.
+
+```bash
+cd frontend
+```
+
+2. Launch the frontend using a live server, for example, using the Live Server extension in Visual Studio Code.
+
+The frontend will be accessible at `http://127.0.0.1:5500/` or another port provided by the live server.
+
+## API Endpoints
+
+The backend provides the following API endpoints:
+
+- **Register User:**
+  - Endpoint: `/register/`
+  - Method: POST
+  - Description: Register a new user.
+
+- **Submission:**
+  - Endpoint: `/submission/`
+  - Method: POST
+  - Description: Submit user responses.
+
+- **Score:**
+  - Endpoint: `/score/`
+  - Method: GET
+  - Description: Get the user's score.
+
+- **Verify Token:**
+  - Endpoint: `/verifytoken/`
+  - Method: POST
+  - Description: Verify the authenticity of a token.
+
+- **Leaderboard:**
+  - Endpoint: `/leaderboard/`
+  - Method: GET
+  - Description: Retrieve the leaderboard.
+
+- **Generate Access Token and Refresh Token:**
+  - Endpoint: `/token/`
+  - Method: POST
+  - Description: Generate access and refresh tokens using Simple JWT.
+
+## Note
+
+Ensure that you start the backend server before running the frontend to fetch content dynamically from the backend.
+
+Feel free to explore, contribute, and enjoy learning with the Language Learning Quiz Game! If you encounter any issues or have suggestions, please open an issue on GitHub.
