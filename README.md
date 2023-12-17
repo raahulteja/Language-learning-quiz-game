@@ -2,6 +2,18 @@
 
 Welcome to the Language Learning Quiz Game project! This project is a quiz game designed to help users improve their language skills. The project is divided into two components: a decoupled frontend and a backend. The frontend is built entirely using HTML, CSS, and JavaScript, while the backend is developed in Django with the assistance of Django Rest Framework.
 
+# Language Learning Quiz Game
+
+Welcome to the Language Learning Quiz Game project! ...
+
+![Screenshot 1](https://github.com/raahulteja/Language-learning-quiz-game/blob/main/2023-12-17%20(1).png)
+
+![Screenshot 2](https://github.com/raahulteja/Language-learning-quiz-game/blob/main/2023-12-17%20(3).png)
+
+![Screenshot 3](https://github.com/raahulteja/Language-learning-quiz-game/blob/main/2023-12-17%20(4).png)
+
+![Screenshot 4](https://github.com/raahulteja/Language-learning-quiz-game/blob/main/2023-12-17%20(5).png)
+
 ## Getting Started
 
 Follow these steps to set up and run the project locally:
